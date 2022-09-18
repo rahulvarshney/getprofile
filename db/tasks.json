@@ -13,5 +13,15 @@
     "id": "f2d8f6ff-b1f5-4404-a177-32d606530eb7",
     "title": "lick it good!",
     "completed": false
+  },
+  {
+    "id": "35a32e40-cc7a-4943-970e-b760dc265413",
+    "title": "so what now?",
+    "completed": false
+  },
+  {
+    "id": "dc5baaf6-f292-481b-9d9c-b06162e073db",
+    "title": "supabase",
+    "completed": false
   }
 ]

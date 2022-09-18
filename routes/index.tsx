@@ -8,6 +8,8 @@ import { remultServer } from "./_middleware.ts";
 
 export const handler: Handlers<Task[]> = {
   async GET(req, ctx) {
+
+    console.log(req.url);
     const remult = await remultServer.getRemult(req);
     return ctx.render(await remult.repo(Task).find());
   },
