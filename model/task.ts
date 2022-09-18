@@ -14,4 +14,10 @@ export class Task {
 
     @Fields.boolean()
     completed = false;
+
+    @Fields.string()
+    b2b_domain: '';
+
+    @Fields.string()
+    b2b_logo: '';
 }

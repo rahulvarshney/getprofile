@@ -33,6 +33,8 @@ export default function Todos({ data }: { data: Task[] }) {
 
         return (
           <div key={task.id}>
+            {task.b2b_domain}
+            <img src={task.b2b_logo}></img>
             <input
               type="checkbox"
               checked={task.completed}

@@ -11,7 +11,14 @@ export const handler: Handlers<Task[]> = {
 
     console.log("index.tsx 12: ", req.url);
     const remult = await remultServer.getRemult(req);
-    return ctx.render(await remult.repo(Task).find());
+
+    const b2b_logo_url = req.url.replace(/(.+\/\/)/, "");
+    console.log(b2b_logo_url);
+    return ctx.render(await remult.repo(Task).find({
+      where: {
+        b2b_domain: b2b_logo_url
+      }
+    }));
   },
 };
 
